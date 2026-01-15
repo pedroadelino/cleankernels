@@ -1,20 +1,21 @@
-🧹 Kernel Cleanup Assistant
+🧹 Clean Kernels
 
-A safe, intelligent Bash tool for identifying and removing old Linux kernel packages on Debian/Ubuntu systems.
+    A safe, intelligent Bash tool for identifying and removing old Linux kernel packages on Debian/Ubuntu systems.
 
-This script analyses:
+    This script analyses:
 
-    Kernels referenced in grub.cfg
+        Kernels referenced in grub.cfg
 
-    Installed kernel packages
+        Installed kernel packages
 
-    The running kernel
+        The running kernel
 
-    The newest kernels not yet in GRUB
+        The newest kernels not yet in GRUB
 
-    All related packages (image, modules, headers)
+        All related packages (image, modules, headers)
 
-…and builds a safe removal list that never touches anything required for booting.
+        …and builds a safe removal list that never touches anything required for booting.
+
 ✨ Features
 
     Dry‑run mode (default) — shows what would be removed
@@ -44,16 +45,22 @@ This script analyses:
     Root privileges only if you disable dry‑run
 
 🚀 Usage
-1. Clone the repository
-   git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
 
-2. Make the script executable
+    1. Clone the repository
+
+   git clone https://github.com/<your-username>/<your-repo>.git
+
+   cd <your-repo>
+
+    3. Make the script executable
+
    chmod +x kernel-cleanup.sh
 
-3. Run in dry‑run mode (default)
+    4. Run in dry‑run mode (default)
+
    ./kernel-cleanup.sh
-This shows:
+
+   This shows:
 
     Kernels in GRUB
 
@@ -65,8 +72,10 @@ This shows:
 
     Total size that would be freed
 
-4. Run for real (dangerous — be sure!)
+5. Run for real (dangerous — be sure!)
+
    Edit the script: DRY_RUN=false
+
    Then run: sudo ./kernel-cleanup.sh
 
 ⚠️ Safety Notes
@@ -79,13 +88,13 @@ This shows:
 
 📁 Suggested .gitignore
 
-Create a .gitignore file with:
-*.swp
-*.bak
-*.tmp
-*.log
-.DS_Store
+    Create a .gitignore file with:
+    *.swp
+    *.bak
+    *.tmp
+    *.log
+    .DS_Store
 
 📜 License
 
-MIT License
+    MIT License
