@@ -14,7 +14,7 @@
 
         All related packages (image, modules, headers)
 
-        …and builds a safe removal list that never touches anything required for booting.
+    …and builds a safe removal list that never touches anything required for booting.
 
 ✨ Features
 
@@ -48,17 +48,18 @@
 
     1. Clone the repository
 
-   git clone https://github.com/<your-username>/<your-repo>.git
+       git clone https://github.com/pedroadelino/cleankernels.git
 
-   cd <your-repo>
+    2. 
+       cd cleankernels
 
     3. Make the script executable
 
-   chmod +x kernel-cleanup.sh
+       chmod +x clean_kernels.sh
 
     4. Run in dry‑run mode (default)
 
-   ./kernel-cleanup.sh
+       ./clean_kernels.sh
 
    This shows:
 
@@ -76,7 +77,7 @@
 
    Edit the script: DRY_RUN=false
 
-   Then run: sudo ./kernel-cleanup.sh
+   Then run: sudo ./clean_kernels.sh
 
 ⚠️ Safety Notes
 
